@@ -5,8 +5,7 @@ import android.os.Bundle
 import com.example.halengo.databinding.ActivityVindskyddinfoBinding
 
 class vindskyddinfo : AppCompatActivity() {
-    //Konstant värde som inte ändras medans vindskyddsinfo finns
-    //Defineras av den tryckta knappen på kartan
+
 
     lateinit var binding: ActivityVindskyddinfoBinding
     override fun onCreate(savedInstanceState: Bundle?) {

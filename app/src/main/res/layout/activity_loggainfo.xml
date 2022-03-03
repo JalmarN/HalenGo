@@ -11,11 +11,11 @@
         android:layout_height="218dp"
         android:background="@drawable/shadow"
         android:backgroundTint="#272323"
+        android:contentDescription="@string/regnskydd01"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/tvatthallarna_cover"
-        android:contentDescription="@string/regnskydd01" />
+        app:srcCompat="@drawable/tvatthallarna_cover" />
 
     <TextView
         android:id="@+id/valt_vindskydd"
@@ -54,7 +54,7 @@
         app:layout_constraintTop_toBottomOf="@+id/okuperings_tid" />
 
     <RadioGroup
-        android:id="@+id/ved_radio"
+        android:id="@+id/ved_alt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ved">
 
         <RadioButton
-            android:id="@+id/ved_1_info"
+            android:id="@+id/radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ved_alt1"
@@ -74,7 +74,7 @@
             tools:layout_editor_absoluteY="441dp" />
 
         <RadioButton
-            android:id="@+id/ved_2_info"
+            android:id="@+id/radioButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ved_alt2"
@@ -84,7 +84,7 @@
             tools:layout_editor_absoluteY="441dp" />
 
         <RadioButton
-            android:id="@+id/ved_3_info"
+            android:id="@+id/radioButton3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ved_alt3"
@@ -92,41 +92,6 @@
             app:layout_constraintHorizontal_bias="0.85"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="441dp" />
-
-    </RadioGroup>
-
-
-    <RadioGroup
-        android:id="@+id/plats_radio_info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/plats_skick">
-
-        <RadioButton
-            android:id="@+id/skick_1_info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="7dp"
-            android:text="@string/plats_alt1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="606dp" />
-
-
-        <RadioButton
-            android:id="@+id/skick_2_info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/plats_alt2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/radioButton4"
-            tools:layout_editor_absoluteY="606dp" />
-
 
     </RadioGroup>
 
@@ -138,8 +103,41 @@
         android:layout_marginTop="60dp"
         android:text="@string/plats"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ved_radio" />
+        app:layout_constraintTop_toBottomOf="@+id/ved_alt" />
 
+    <RadioGroup
+        android:id="@+id/plats_alt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plats_skick">
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:text="@string/plats_alt1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="606dp" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plats_alt2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radioButton4"
+            tools:layout_editor_absoluteY="606dp" />
+
+
+    </RadioGroup>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

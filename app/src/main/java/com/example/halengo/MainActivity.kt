@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //clicklisterners för knappar på kartan
-        //Skickar namnet på vindskyddet och bildens id till infoknapp()
+        //Skickar namnet på vindskyddet och bildens id till infoknapp() funktionen
         binding.tvatthallarnaKnapp.setOnClickListener {
             infoKnapp("Tvätthallarna",R.drawable.tvatthallarna_cover)
         }
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         //Skapar intent för att öppna vindskyddinfo
         val tillInfo = Intent(this,vindskyddinfo::class.java)
 
-        //Skickar det valda vindskyddet och bildId som två extras till vindskyddinfo
+        //Skickar det valda vindskyddet och bildId:t som två extras till vindskyddinfo
 
         tillInfo.putExtra("valtVindskydd",valtVindskydd)
         tillInfo.putExtra("bildExtra",bildId)
