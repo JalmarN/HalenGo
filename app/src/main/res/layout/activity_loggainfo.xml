@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="-10dp"
+    tools:layout_editor_absoluteY="5dp">
 
     <ImageView
         android:id="@+id/fin_bild"
@@ -11,7 +17,7 @@
         android:layout_height="218dp"
         android:background="@drawable/shadow"
         android:backgroundTint="#272323"
-        android:contentDescription="@string/regnskydd01"
+        android:contentDescription="@string/bildbeskrivning"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -22,36 +28,58 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:text="@string/logga_information"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/okuperings_tid"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fin_bild"
-        app:layout_constraintVertical_bias="0.509"
-        tools:text="Vindskydd" />
+        app:layout_constraintVertical_bias="0.509" />
 
     <TextView
         android:id="@+id/okuperings_tid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="72dp"
-        android:text="@string/okupering_tid"
+        android:layout_marginTop="84dp"
+        android:text="@string/hur_l_nge_kommer_ni_stanna"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fin_bild" />
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="220dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/okuperings_tid" />
+
+    <DatePicker
+        android:id="@+id/date_picker"
+        android:layout_width="220dp"
+        android:layout_height="170dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        app:layout_constraintBottom_toTopOf="@+id/ved"
+        app:layout_constraintStart_toStartOf="@+id/time_picker"
+        app:layout_constraintTop_toBottomOf="@+id/time_picker"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/ved"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:text="@string/ved"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/okuperings_tid" />
+        app:layout_constraintTop_toBottomOf="@id/date_picker" />
 
     <RadioGroup
         android:id="@+id/ved_alt"
@@ -100,7 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="48dp"
         android:text="@string/plats"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ved_alt" />
@@ -115,6 +143,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/plats_skick">
 
+
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="wrap_content"
@@ -125,7 +154,6 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="606dp" />
-
 
         <RadioButton
             android:id="@+id/radioButton5"
@@ -139,5 +167,16 @@
 
     </RadioGroup>
 
+    <Button
+        android:id="@+id/logga_information"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/skicka"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plats_alt"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:layout_width="wrap_content" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

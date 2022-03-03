@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/tvatthallarna_cover"
-        android:contentDescription="@string/regnskydd01" />
+        android:contentDescription="@string/bildbeskrivning" />
 
     <TextView
         android:id="@+id/valt_vindskydd"

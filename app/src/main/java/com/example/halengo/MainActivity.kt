@@ -31,6 +31,10 @@ class MainActivity : AppCompatActivity() {
         binding.alltidhultKnapp.setOnClickListener {
             infoKnapp("Alltidhult",R.drawable.alltidhult_cover)
         }
+        binding.button.setOnClickListener {
+            val test = Intent(this,loggainfo::class.java)
+            startActivity(test)
+        }
     }
 
     //kod för kamera knapp
@@ -63,4 +67,5 @@ class MainActivity : AppCompatActivity() {
 
         startActivity(tillInfo)
     }
+
 }

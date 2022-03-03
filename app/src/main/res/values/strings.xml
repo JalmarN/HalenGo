@@ -12,10 +12,6 @@
     <string name="plats_alt2">Vällskött</string>
     <string name="plats_alt1">Behöver städas</string>
 
-
-    <string name="regnskydd01">tvatthallarna</string>
-
-    <string name="title_activity_main2">MainActivity2</string>
     <string name="camera_button">open camera</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -25,4 +21,8 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="logga_information">Logga information</string>
+    <string name="hur_l_nge_kommer_ni_stanna">Hur länge kommer ni stanna?</string>
+    <string name="bildbeskrivning">Bild på vindskydd</string>
+    <string name="skicka">Skicka</string>
 </resources>
