@@ -55,9 +55,9 @@ class MainActivity : AppCompatActivity() {
         //Skapar intent för att öppna vindskyddinfo
         val tillInfo = Intent(this,vindskyddinfo::class.java)
 
-        //Skickar det valda vindskyddet och bildId som två extras till konstanten nuvarandeVindskydd i vindskyddinfo
+        //Skickar det valda vindskyddet och bildId som två extras till vindskyddinfo
 
-        tillInfo.putExtra(vindskyddinfo.nuvarandeVindskydd,valtVindskydd)
+        tillInfo.putExtra("valtVindskydd",valtVindskydd)
         tillInfo.putExtra("bildExtra",bildId)
 
 
