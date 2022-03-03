@@ -14,13 +14,22 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //Skapar bindingobjektet
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //kod för knappar
-        binding.tvatthallaraButton.setOnClickListener {
-            val intent = Intent(this,exempel_vindskydd::class.java)
-            startActivity(intent)
+        //clicklisterners för knappar på kartan
+        binding.tvatthallarnaKnapp.setOnClickListener {
+            infoKnapp("Tvätthallarna")
+        }
+        binding.norraKnapp.setOnClickListener {
+            infoKnapp("Norra")
+        }
+        binding.bergatorpetKnapp.setOnClickListener {
+            infoKnapp("Bergatorpet")
+        }
+        binding.alltidhultKnapp.setOnClickListener {
+            infoKnapp("Alltidhult")
         }
     }
 
@@ -39,5 +48,15 @@ class MainActivity : AppCompatActivity() {
 
         }
         return super.onOptionsItemSelected(item)
+    }
+    //funktion för knappar som startar vindskyddinfo aktiviten
+     private fun infoKnapp(valtVindskydd: String){
+        //Skapar intent för att öppna vindskyddinfo
+        val tillInfo = Intent(this,vindskyddinfo::class.java)
+
+        //Skickar det valda vindskyddet som en extra till konstanten nuvarandeVindskydd i vindskyddinfo
+         tillInfo.putExtra(vindskyddinfo.nuvarandeVindskydd,valtVindskydd)
+
+        startActivity(tillInfo)
     }
 }

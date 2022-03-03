@@ -8,8 +8,17 @@
     android:background="@drawable/cleanmap2"
     >
 
+    <View
+        android:id="@+id/knapp_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
-        android:id="@+id/tvatthallara_button"
+        android:id="@+id/tvatthallarna_knapp"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="48dp"
@@ -22,7 +31,7 @@
         app:tint="#028C04" />
 
     <ImageButton
-        android:id="@+id/bergatorpet_button"
+        android:id="@+id/bergatorpet_knapp"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="136dp"
@@ -35,7 +44,7 @@
         app:tint="#028C04" />
 
     <ImageButton
-        android:id="@+id/alltidhult_button"
+        android:id="@+id/alltidhult_knapp"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="84dp"
@@ -48,7 +57,7 @@
         app:tint="#028C04" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/norra_knapp"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="192dp"

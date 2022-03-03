@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">HalenGo</string>
-    
+
     <string name="okupering_tid">Hur länge är vindskyddet upptaget?</string>
-    
+
     <string name="ved">Hur mycket ved finns kvar?</string>
     <string name="ved_alt1">Lite/Inget</string>
     <string name="ved_alt2">Lagom</string>
@@ -11,10 +11,10 @@
     <string name="plats">Hur ser platsen ut?</string>
     <string name="plats_alt2">Vällskött</string>
     <string name="plats_alt1">Behöver städas</string>
-    
+
 
     <string name="regnskydd01">tvatthallarna</string>
-    
+
     <string name="title_activity_main2">MainActivity2</string>
     <string name="camera_button">open camera</string>
     <!-- Strings used for fragments for navigation -->

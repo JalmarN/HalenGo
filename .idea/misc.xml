@@ -3,12 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/OfmEdu/AndroidStudioProjects/HalenGo/app/src/main/res/drawable/shadow.xml" value="0.149" />
+        <entry key="..\:/Users/OfmEdu/AndroidStudioProjects/HalenGo/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/OfmEdu/AndroidStudioProjects/HalenGo/app/src/main/res/layout/activity_tvatthallarnainfo.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/OfmEdu/AndroidStudioProjects/HalenGo/app/src/main/res/layout/activity_vindskyddinfo.xml" value="0.184375" />
+        <entry key="..\:/Users/OfmEdu/AndroidStudioProjects/HalenGo/app/src/main/res/layout/exempel_vindskydd.xml" value="0.16530797101449277" />
         <entry key="..\:/Users/jalma/AndroidStudioProjects/HalenGo/app/src/main/res/drawable/shadow.xml" value="0.197" />
         <entry key="..\:/Users/jalma/AndroidStudioProjects/HalenGo/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/jalma/AndroidStudioProjects/HalenGo/app/src/main/res/layout/exempel_vindskydd.xml" value="0.33" />
-        <entry key="..\:/Users/ludwi/StudioProjects/HalenGo/app/src/main/res/layout/activity_main.xml" value="0.24954710144927536" />
-        <entry key="..\:/Users/ludwi/StudioProjects/HalenGo/app/src/main/res/layout/exempel_vindskydd.xml" value="0.24954710144927536" />
-        <entry key="..\:/Users/ludwi/StudioProjects/HalenGo/app/src/main/res/menu/layout_menu.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

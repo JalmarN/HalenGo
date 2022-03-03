@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HalenGo">
         <activity
+            android:name=".vindskyddinfo"
+            android:exported="false" />
+        <activity
             android:name=".exempel_vindskydd"
             android:exported="false" />
         <activity
