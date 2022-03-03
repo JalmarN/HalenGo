@@ -4,6 +4,6 @@
     <item
         android:id="@+id/camera_button"
         android:icon="@drawable/ic_camera"
-        android:title="@string/action_turn_on_camera"
+        android:title="@string/camera_button"
         app:showAsAction="always" />
 </menu>
