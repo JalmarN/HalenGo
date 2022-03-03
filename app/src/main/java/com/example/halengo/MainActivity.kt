@@ -11,7 +11,6 @@ import com.example.halengo.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //Skapar bindingobjektet
@@ -19,17 +18,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //clicklisterners för knappar på kartan
+        //Skickar namnet på vindskyddet och bildens id till infoknapp()
         binding.tvatthallarnaKnapp.setOnClickListener {
-            infoKnapp("Tvätthallarna")
+            infoKnapp("Tvätthallarna",R.drawable.tvatthallarna_cover)
         }
-        binding.norraKnapp.setOnClickListener {
-            infoKnapp("Norra")
+        binding.myllevikKnapp.setOnClickListener {
+            infoKnapp("Myllevik",R.drawable.myllevik_cover)
         }
         binding.bergatorpetKnapp.setOnClickListener {
-            infoKnapp("Bergatorpet")
+            infoKnapp("Bergatorpet",R.drawable.bergatorpet_cover)
         }
         binding.alltidhultKnapp.setOnClickListener {
-            infoKnapp("Alltidhult")
+            infoKnapp("Alltidhult",R.drawable.alltidhult_cover)
         }
     }
 
@@ -49,13 +49,17 @@ class MainActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-    //funktion för knappar som startar vindskyddinfo aktiviten
-     private fun infoKnapp(valtVindskydd: String){
+
+    //funktion för knappar som startar vindskyddinfo aktiviten. bildId berättar vilken bild som skall användas
+     private fun infoKnapp(valtVindskydd: String, bildId: Int){
         //Skapar intent för att öppna vindskyddinfo
         val tillInfo = Intent(this,vindskyddinfo::class.java)
 
-        //Skickar det valda vindskyddet som en extra till konstanten nuvarandeVindskydd i vindskyddinfo
-         tillInfo.putExtra(vindskyddinfo.nuvarandeVindskydd,valtVindskydd)
+        //Skickar det valda vindskyddet och bildId som två extras till konstanten nuvarandeVindskydd i vindskyddinfo
+
+        tillInfo.putExtra(vindskyddinfo.nuvarandeVindskydd,valtVindskydd)
+        tillInfo.putExtra("bildExtra",bildId)
+
 
         startActivity(tillInfo)
     }
