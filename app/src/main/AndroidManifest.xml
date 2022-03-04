@@ -23,14 +23,14 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-
-                    <action android:name="android.intent.action.VIEW"/>
-                    <category android:name="android.intent.category.BROWSABLE"/>
-                    <category android:name="android.intent.category.DEFAULT"/>
-                    <data android:scheme="http"
-                        android:host="www.HalenGo.com"
-                        android:pathPrefix="/Vindskydd.Ofm"/>
-
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"
+                    android:host="www.HalenGo.com"
+                    android:pathPrefix="/Vindskydd.Ofm"/>
             </intent-filter>
         </activity>
     </application>
