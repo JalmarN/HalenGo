@@ -11,7 +11,16 @@
         android:theme="@style/Theme.HalenGo">
         <activity
             android:name=".loggainfo"
-            android:exported="false"/>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"
+                    android:host="www.halengo.com"
+                    android:pathPrefix="/vindskydd.ofm"/>
+            </intent-filter>
+        </activity>
 
         <activity
             android:name=".vindskyddinfo"
@@ -24,14 +33,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:scheme="http"
-                    android:host="www.HalenGo.com"
-                    android:pathPrefix="/Vindskydd.Ofm"/>
-            </intent-filter>
+
         </activity>
     </application>
 
