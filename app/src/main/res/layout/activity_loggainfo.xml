@@ -52,6 +52,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:orientation="vertical"
+        android:checkedButton="@id/tvatthallarna"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vindksydd_val_text">
 
