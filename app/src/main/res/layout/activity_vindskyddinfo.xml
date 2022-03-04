@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <!--Bilden -->
     <ImageView
         android:id="@+id/fin_bild"
         android:layout_width="414dp"
@@ -16,26 +16,26 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/tvatthallarna_cover"
         android:contentDescription="@string/bildbeskrivning" />
-
+    <!--Rubrik -->
     <TextView
         android:id="@+id/valt_vindskydd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/okuperings_tid"
+        app:layout_constraintBottom_toTopOf="@+id/okupering"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fin_bild"
         app:layout_constraintVertical_bias="0.509"
         tools:text="Vindskydd" />
 
     <TextView
-        android:id="@+id/okuperings_tid"
+        android:id="@+id/okupering"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="72dp"
-        android:text="@string/okupering_tid"
+        android:text="@string/vindskyddet_r_ledigt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +51,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/okuperings_tid" />
+        app:layout_constraintTop_toBottomOf="@+id/okupering" />
 
     <RadioGroup
         android:id="@+id/ved_radio"
@@ -62,7 +62,7 @@
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ved">
-
+        <!--går inte att klicka, på ska bara visa info -->
         <RadioButton
             android:id="@+id/ved_1_info"
             android:layout_width="wrap_content"
@@ -73,7 +73,7 @@
             app:layout_constraintHorizontal_bias="0.08"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="441dp" />
-
+        <!--går inte att klicka, på ska bara visa info -->
         <RadioButton
             android:id="@+id/ved_2_info"
             android:layout_width="wrap_content"
@@ -84,7 +84,7 @@
             app:layout_constraintHorizontal_bias="0.532"
             app:layout_constraintStart_toEndOf="@+id/radioButton"
             tools:layout_editor_absoluteY="441dp" />
-
+        <!--går inte att klicka, på ska bara visa info -->
         <RadioButton
             android:id="@+id/ved_3_info"
             android:layout_width="wrap_content"
@@ -98,6 +98,15 @@
 
     </RadioGroup>
 
+    <TextView
+        android:id="@+id/plats_skick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/plats"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ved_radio" />
 
     <RadioGroup
         android:id="@+id/plats_radio_info"
@@ -109,6 +118,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/plats_skick">
 
+        <!--går inte att klicka, på ska bara visa info -->
         <RadioButton
             android:id="@+id/skick_1_info"
             android:layout_width="wrap_content"
@@ -121,7 +131,7 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="606dp" />
 
-
+        <!--går inte att klicka, på ska bara visa info -->
         <RadioButton
             android:id="@+id/skick_2_info"
             android:layout_width="wrap_content"
@@ -131,20 +141,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/radioButton4"
             tools:layout_editor_absoluteY="606dp" />
-
-
     </RadioGroup>
-
-    <TextView
-        android:id="@+id/plats_skick"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="60dp"
-        android:text="@string/plats"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ved_radio" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

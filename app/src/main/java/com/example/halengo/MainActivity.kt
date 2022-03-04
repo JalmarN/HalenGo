@@ -31,11 +31,7 @@ class MainActivity : AppCompatActivity() {
         binding.alltidhultKnapp.setOnClickListener {
             infoKnapp("Alltidhult",R.drawable.alltidhult_cover)
         }
-        //temp knapp
-        binding.button.setOnClickListener {
-            val test = Intent(this,loggainfo::class.java)
-            startActivity(test)
-        }
+
     }
 
     //kod för kamera knapp
@@ -65,8 +61,16 @@ class MainActivity : AppCompatActivity() {
         tillInfo.putExtra("valtVindskydd",valtVindskydd)
         tillInfo.putExtra("bildExtra",bildId)
 
+        //om nuvarande aktivitet startades av loggainfo
+        if(loggainfo.infoLoggad == true){
+            //Hämta den loggade infon
+            val loggInfo: Information = intent.getSerializableExtra("loggad info") as Information
+            //Skicka vidare till vindskyddinfo
+            tillInfo.putExtra("loggad info",loggInfo)
 
+        }
         startActivity(tillInfo)
-    }
+        }
+
 
 }

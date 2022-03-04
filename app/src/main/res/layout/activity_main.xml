@@ -7,7 +7,7 @@
     tools:context=".MainActivity"
     android:background="@drawable/cleanmap2"
     >
-
+    <!--Markörknappar-->
     <ImageButton
         android:id="@+id/tvatthallarna_knapp"
         android:layout_width="50dp"
@@ -16,6 +16,7 @@
         android:layout_marginBottom="16dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitXY"
+        android:tag="Tvätthallarna"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/marker"
@@ -29,6 +30,7 @@
         android:layout_marginBottom="96dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitXY"
+        android:tag="Bergatorpet"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/marker"
@@ -42,6 +44,7 @@
         android:layout_marginBottom="244dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitXY"
+        android:tag="Alltidhult"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/marker"
@@ -55,18 +58,11 @@
         android:layout_marginBottom="348dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitXY"
+        android:tag="Myllevik"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/marker"
         app:tint="#028C04"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

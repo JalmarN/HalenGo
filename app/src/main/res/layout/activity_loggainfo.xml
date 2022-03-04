@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Scrollview s¨å att man kan scrolla-->
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -10,7 +11,7 @@
     android:layout_height="wrap_content"
     tools:layout_editor_absoluteX="-10dp"
     tools:layout_editor_absoluteY="5dp">
-
+    <!--Bild-->
     <ImageView
         android:id="@+id/fin_bild"
         android:layout_width="414dp"
@@ -22,18 +23,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/tvatthallarna_cover" />
-
-    <TextView
-        android:id="@+id/vindksydd_val_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/v_lj_vindskydd"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.069"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logga_information" />
-
+    <!--Rubrik-->
     <TextView
         android:id="@+id/logga_information"
         android:layout_width="wrap_content"
@@ -45,8 +35,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fin_bild" />
 
+    <TextView
+        android:id="@+id/vindkskydd_val_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/v_lj_vindskydd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logga_information" />
+    <!--välja vindskydd-->
     <RadioGroup
-        android:id="@+id/vindskydd_val"
+        android:id="@+id/vindskydd_alt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -54,7 +55,7 @@
         android:orientation="vertical"
         android:checkedButton="@id/tvatthallarna"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vindksydd_val_text">
+        app:layout_constraintTop_toBottomOf="@+id/vindkskydd_val_text">
 
         <RadioButton
             android:id="@+id/tvatthallarna"
@@ -96,7 +97,7 @@
     </RadioGroup>
 
     <TextView
-        android:id="@+id/okuperings_tid"
+        android:id="@+id/okupering"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -104,12 +105,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.078"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vindskydd_val" />
+        app:layout_constraintTop_toBottomOf="@+id/vindskydd_alt"/>
 
 
 
 
-
+    <!--Välja tid och datum-->
     <TimePicker
         android:id="@+id/time_picker"
         android:layout_width="220dp"
@@ -120,7 +121,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.094"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/okuperings_tid" />
+        app:layout_constraintTop_toBottomOf="@+id/okupering" />
 
     <DatePicker
         android:id="@+id/date_picker"
