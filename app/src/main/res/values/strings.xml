@@ -25,4 +25,11 @@
     <string name="hur_l_nge_kommer_ni_stanna">Hur länge kommer ni stanna?</string>
     <string name="bildbeskrivning">Bild på vindskydd</string>
     <string name="skicka">Skicka</string>
+    <string name="v_lj_vindskydd">Välj vindskydd</string>
+    <string name="tvatthallarna">Tvätthallarna</string>
+    <string name="myllevik">Myllevik</string>
+    <string name="bergatorpet">Bergatorpet</string>
+    <string name="alltidhult">Alltidhult</string>
+
+
 </resources>
