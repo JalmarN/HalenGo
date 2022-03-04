@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         binding.alltidhultKnapp.setOnClickListener {
             infoKnapp("Alltidhult",R.drawable.alltidhult_cover)
         }
+        //temp knapp
         binding.button.setOnClickListener {
             val test = Intent(this,loggainfo::class.java)
             startActivity(test)

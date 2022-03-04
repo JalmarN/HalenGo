@@ -15,7 +15,11 @@ class loggainfo : AppCompatActivity() {
         setContentView(binding.root)
         //sätter tidsväljaren i 24h format
         binding.timePicker.setIs24HourView(true)
-        //sätter den minsta tiden till nutid på datumväljaren
+        //sätter den minsta tiden till nutid på datumväljaren och tidväljaren
         binding.datePicker.setMinDate(System.currentTimeMillis() - 1000)
+
+        //sätter den maximala bokningstiden till 2 dagar i framtiden
+        binding.datePicker.setMaxDate(System.currentTimeMillis() +86400000)
+
     }
 }
